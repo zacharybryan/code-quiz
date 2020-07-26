@@ -1,14 +1,21 @@
-var navElement = document.getElementById(navId);
+// var navElement = document.querySelector("#navId");
+// console.log(navElement, " Nav Ele");
 
-var timerElement = document.getElementById(quizTimer);
+// var navColElement = document.getElementById("navColDiv");
+// console.log(navColElement, " Nav Col Ele");
+
+var timerElement = document.getElementById("quizTimer");
+
 
 var quizTimer = 60;
+$("#startButton").onClick(function() {
+    prepareQuiz ();
+    })
 
 function prepareQuiz() {
     var timeInterval = setInterval(function() {
       timerElement.textContent = quizTimer + " seconds remaining";
       quizTimer--;
-        console.log(quizTimer);
       if (quizTimer === 0) {
         timerElement.textContent = " ";
         clearInterval(timeInterval);
@@ -16,7 +23,8 @@ function prepareQuiz() {
   
     }, 1000);
   }
-prepareQuiz ();
+
+
 document.appendChild.navId;
 navId.appendChild.quizTimer;
 
