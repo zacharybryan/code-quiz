@@ -12,29 +12,33 @@ var quizTimer = 60;
 
 var questions = [
 {
-  title: "",
-  choices:[""],
-  answers: ""
+  title: "Which of the following is not a valid JavaScript variable name?",
+  choices:[
+    "2names",
+    "_first_and_last_names",
+    "FirstAndLast",
+    "None of the above"],
+  answer: "2names"
 },
 {
   title: "",
   choices:[""],
-  answers: ""
+  answer: ""
 },
 {
   title: "",
   choices:[""],
-  answers: ""
+  answer: ""
 },
 {
   title: "",
   choices:[""],
-  answers: ""
+  answer: ""
 },
 {
   title: "",
   choices:[""],
-  answers: ""
+  answer: ""
 },]
 
 buttonElement.addEventListener("click", function(){
@@ -64,7 +68,7 @@ navId.appendChild.quizTimer;
 
 // Get questions (5) Multiple Choice 
 
-// Which of the following is not a valid JavaScript variable name?
+// 
 // A. 2names
 // B. _first_and_last_names
 // C. FirstAndLast
