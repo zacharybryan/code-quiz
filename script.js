@@ -30,9 +30,13 @@ var questions = [
   answer: "<SCRIPT>"
 },
 {
-  question: "",
-  choices:[""],
-  answer: ""
+  question: "Which of the following best describes JavaScript?",
+  choices:[
+    "a low-level programming language.",
+    "a scripting language precompiled in the browser.",
+    "a compiled scripting language.",
+    "an object-oriented scripting language."],
+  answer: "an object-oriented scripting language."
 },
 {
   question: "",
@@ -71,13 +75,6 @@ document.appendChild.navId;
 navId.appendChild.quizTimer;
 
 // Get questions (5) Multiple Choice 
-
-// ______ tag is an extension to HTML that can enclose any number of JavaScript statements.
-// A. <SCRIPT>
-// B. <BODY>
-// C. <HEAD>
-// D. <TITLE>
-// Ans: A
 
 // Which of the following best describes JavaScript?
 // A. a low-level programming language.
