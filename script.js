@@ -10,6 +10,33 @@ var welcomeElement = document.getElementById("welcomeContainer")
 
 var quizTimer = 60;
 
+var questions = [
+{
+  title: "",
+  choices:[""],
+  answers: ""
+},
+{
+  title: "",
+  choices:[""],
+  answers: ""
+},
+{
+  title: "",
+  choices:[""],
+  answers: ""
+},
+{
+  title: "",
+  choices:[""],
+  answers: ""
+},
+{
+  title: "",
+  choices:[""],
+  answers: ""
+},]
+
 buttonElement.addEventListener("click", function(){
     prepareQuiz();
     // var welcomeElement = display question 1 
@@ -22,6 +49,10 @@ function prepareQuiz() {
       if (quizTimer === 0) {
         timerElement.textContent = " ";
         clearInterval(timeInterval);
+      }
+
+      if (quizTimer > 0) {
+       // timerElement.textContent save score 
       }
   
     }, 1000);
