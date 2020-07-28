@@ -31,12 +31,12 @@ function prepareQuiz() {
 document.appendChild.navId;
 navId.appendChild.quizTimer;
 
-// Get questions (5) Mulitple Choice 
-// apply score changes/ subtract from timer for incorect answers
+// Get questions (5) Multiple Choice 
+// apply score changes/ subtract from timer for incorrect answers
 // take final timer amount and create score
 // add high score
 // commit it to the memory thingy 
-// pull form the memory to display the high scores added by initals
+// pull form the memory to display the high scores added by initials
 // Look at activity with commiting memory 
 // put final touches on apperance (look at portfolio looks) (d-flex maybe or something like that )
 // look into adding sound effects
