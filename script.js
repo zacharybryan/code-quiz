@@ -98,19 +98,29 @@ function prepareQuiz() {
       console.log(choice, "choice");
       var choiceButton = document.createElement("button");
       choiceButton.value = choice;
+      choiceButton.innerHTML = choice;
       choiceButton.setAttribute("content", choice)
+      document.addEventListener("click", checkAnswer);
       testContainerElement.appendChild(choiceButton);
+
 
     }
 
 
   }
-
+  function checkAnswer (event) {
+    if (event.target) = 
+    console.log(event.target);
+  }
   function score () {
 
   }
 
+// get value of button comepare to answer in array and give as score 
 
+// score increase total
+
+// timer deduction for wrong answers 
 document.appendChild.navId;
 navId.appendChild.quizTimer;
 
