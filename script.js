@@ -8,6 +8,7 @@ var timerElement = document.getElementById("quizTimer");
 var buttonElement = document.getElementById("startButton");
 var welcomeElement = document.getElementById("welcomeContainer");
 var highScoreTextBox = document.getElementById("highScoreTextBox");
+var testContainerElement = document.getElementById("testContainer");
 var score = ""
 
 var quizTimer = 60;
@@ -61,11 +62,13 @@ var questions = [
 
 buttonElement.addEventListener("click", function(){
     prepareQuiz();
-    // var welcomeElement = display question 1 
+    // var welcomeElement = display question 
+
 })
 
 function prepareQuiz() {
   clearScreen ();
+  displayText ();
   var timeInterval = setInterval(function() {
   timerElement.textContent = quizTimer + " seconds remaining";
   quizTimer--;
@@ -86,6 +89,20 @@ function prepareQuiz() {
   }
 
   function displayText () {
+    var newP = document.createElement("p")
+    newP.textContent = questions[0].question;
+    testContainerElement.appendChild(newP);
+
+    for (let index = 0; index < questions[0].choices.length; index++) {
+      const choice = questions[0].choices[index];
+      console.log(choice, "choice");
+      var choiceButton = document.createElement("button");
+      choiceButton.value = choice;
+      choiceButton.setAttribute("content", choice)
+      testContainerElement.appendChild(choiceButton);
+
+    }
+
 
   }
 
