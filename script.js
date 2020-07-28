@@ -12,7 +12,7 @@ var quizTimer = 60;
 
 var questions = [
 {
-  title: "Which of the following is not a valid JavaScript variable name?",
+  question: "Which of the following is not a valid JavaScript variable name?",
   choices:[
     "2names",
     "_first_and_last_names",
@@ -21,22 +21,26 @@ var questions = [
   answer: "2names"
 },
 {
-  title: "",
+  question: "______ tag is an extension to HTML that can enclose any number of JavaScript statements.",
+  choices:[
+    "<SCRIPT>",
+    "<BODY>",
+    "<HEAD>",
+    "<TITLE>"],
+  answer: "<SCRIPT>"
+},
+{
+  question: "",
   choices:[""],
   answer: ""
 },
 {
-  title: "",
+  question: "",
   choices:[""],
   answer: ""
 },
 {
-  title: "",
-  choices:[""],
-  answer: ""
-},
-{
-  title: "",
+  question: "",
   choices:[""],
   answer: ""
 },]
@@ -67,13 +71,6 @@ document.appendChild.navId;
 navId.appendChild.quizTimer;
 
 // Get questions (5) Multiple Choice 
-
-// 
-// A. 2names
-// B. _first_and_last_names
-// C. FirstAndLast
-// D. None of the above
-// Ans: A
 
 // ______ tag is an extension to HTML that can enclose any number of JavaScript statements.
 // A. <SCRIPT>
