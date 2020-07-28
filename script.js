@@ -48,10 +48,14 @@ var questions = [
   answer: "If"
 },
 {
-  question: "",
-  choices:[""],
-  answer: ""
-},]
+  question: "The _______ method of an Array object adds and/or removes elements from an array.",
+  choices:[
+    "Reverse",
+    "Shift",
+    "Slice",
+    "Splice"],
+  answer: "Splice"
+}];
 
 buttonElement.addEventListener("click", function(){
     prepareQuiz();
