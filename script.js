@@ -6,7 +6,9 @@
 
 var timerElement = document.getElementById("quizTimer");
 var buttonElement = document.getElementById("startButton");
-var welcomeElement = document.getElementById("welcomeContainer")
+var welcomeElement = document.getElementById("welcomeContainer");
+var highScoreTextBox = document.getElementById("highScoreTextBox");
+var score = ""
 
 var quizTimer = 60;
 
@@ -63,12 +65,13 @@ buttonElement.addEventListener("click", function(){
 })
 
 function prepareQuiz() {
-    var timeInterval = setInterval(function() {
-      timerElement.textContent = quizTimer + " seconds remaining";
-      quizTimer--;
-      if (quizTimer === 0) {
-        timerElement.textContent = " ";
-        clearInterval(timeInterval);
+  clearScreen ();
+  var timeInterval = setInterval(function() {
+  timerElement.textContent = quizTimer + " seconds remaining";
+  quizTimer--;
+  if (quizTimer === 0) {
+  timerElement.textContent = " ";
+  clearInterval(timeInterval); 
       }
 
       if (quizTimer > 0) {
@@ -77,19 +80,26 @@ function prepareQuiz() {
   
     }, 1000);
   }
+  function clearScreen () {
+    var welcomeElement = document.getElementById("welcomeContainer");
+    welcomeElement.setAttribute("class","hide"); 
+  }
+
+  function displayText () {
+
+  }
+
+  function score () {
+
+  }
 
 
 document.appendChild.navId;
 navId.appendChild.quizTimer;
 
-// Get questions (5) Multiple Choice 
+// (done) Get questions (5) Multiple Choice 
 
-// The _______ method of an Array object adds and/or removes elements from an array.
-// A. Reverse
-// B. Shift
-// C. Slice
-// D. Splice
-// Ans: D
+
 
 
 // apply score changes/ subtract from timer for incorrect answers
