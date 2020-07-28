@@ -39,9 +39,13 @@ var questions = [
   answer: "an object-oriented scripting language."
 },
 {
-  question: "",
-  choices:[""],
-  answer: ""
+  question: "Using _______ statement is how you test for a specific condition.",
+  choices:[
+    "Select",
+    "If",
+    "Switch",
+    "For"],
+  answer: "If"
 },
 {
   question: "",
@@ -75,20 +79,6 @@ document.appendChild.navId;
 navId.appendChild.quizTimer;
 
 // Get questions (5) Multiple Choice 
-
-// Which of the following best describes JavaScript?
-// A. a low-level programming language.
-// B. a scripting language precompiled in the browser.
-// C. a compiled scripting language.
-// D. an object-oriented scripting language.
-// Ans: D
-
-// Using _______ statement is how you test for a specific condition.
-// A. Select
-// B. If
-// C. Switch
-// D. For
-// Ans: B
 
 // The _______ method of an Array object adds and/or removes elements from an array.
 // A. Reverse
