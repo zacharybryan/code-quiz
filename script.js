@@ -62,8 +62,6 @@ var questions = [
 
 buttonElement.addEventListener("click", function(){
     prepareQuiz();
-    // var welcomeElement = display question 
-
 })
 
 function prepareQuiz() {
@@ -89,7 +87,7 @@ function prepareQuiz() {
   }
 
   function displayText () {
-    var newP = document.createElement("p")
+    var newP = document.getElementById(highscoreTextBox).createElement("p")
     newP.textContent = questions[0].question;
     testContainerElement.appendChild(newP);
 
@@ -109,7 +107,7 @@ function prepareQuiz() {
 
   }
   function checkAnswer (event) {
-    if (event.target) = 
+    if (event.target)  
     console.log(event.target);
   }
   function score () {
